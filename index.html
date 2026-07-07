@@ -110,3 +110,150 @@ und persönlichen Kundenservice.
 </p>
 
 </section>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#0f0f0f;
+color:#fff;
+line-height:1.7;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+header{
+background:#000;
+padding:20px 0;
+position:sticky;
+top:0;
+z-index:999;
+border-bottom:2px solid #c8a84f;
+}
+
+header .container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo h1,
+h1{
+color:#c8a84f;
+font-size:30px;
+font-weight:bold;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:25px;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#c8a84f;
+}
+
+.hero{
+min-height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:60px 20px;
+background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+}
+
+.hero h2{
+font-size:48px;
+margin-bottom:20px;
+color:#fff;
+}
+
+.hero p{
+max-width:800px;
+margin:auto;
+font-size:20px;
+color:#ddd;
+}
+
+.button{
+display:inline-block;
+margin-top:35px;
+padding:16px 36px;
+background:#c8a84f;
+color:#000;
+text-decoration:none;
+font-weight:bold;
+border-radius:8px;
+transition:.3s;
+}
+
+.button:hover{
+background:#fff;
+transform:translateY(-3px);
+}
+
+section{
+padding:80px 20px;
+}
+
+section h2{
+text-align:center;
+font-size:36px;
+margin-bottom:25px;
+color:#c8a84f;
+}
+
+section p{
+max-width:900px;
+margin:auto;
+text-align:center;
+font-size:18px;
+color:#ddd;
+}
+
+footer{
+background:#000;
+padding:30px;
+text-align:center;
+color:#999;
+border-top:2px solid #c8a84f;
+}
+
+@media(max-width:768px){
+
+header .container{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+nav a{
+display:block;
+margin:12px 0;
+}
+
+.hero h2{
+font-size:34px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+}
